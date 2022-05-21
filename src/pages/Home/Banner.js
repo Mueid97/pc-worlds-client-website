@@ -1,21 +1,28 @@
 import React from 'react';
-
+import bannar1 from '../../images/fan.jpg';
+import bannar2 from '../../images/fan2.jpg';
+import bannar3 from '../../images/keyboard.jpg';
+import bannar4 from '../../images/mouse.jpg';
+import bannar5 from '../../images/chip.jpg';
 const Banner = () => {
     return (
         <div>
             
             <div class="carousel w-full">
-                <div id="item1" class="carousel-item w-full">
-                    <img src="https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2" class="w-full" />
+                <div id="item1" class="carousel-item w-full ">
+                    <img  src={bannar1} alt='' />
                 </div>
                 <div id="item2" class="carousel-item w-full">
-                    <img src="https://api.lorem.space/image/car?w=800&h=200&hash=500B67FB" class="w-full" />
+                    <img  src={bannar2} alt='' />
                 </div>
                 <div id="item3" class="carousel-item w-full">
-                    <img src="https://api.lorem.space/image/car?w=800&h=200&hash=A89D0DE6" class="w-full" />
+                    <img  src={bannar3} alt='' />
                 </div>
                 <div id="item4" class="carousel-item w-full">
-                    <img src="https://api.lorem.space/image/car?w=800&h=200&hash=225E6693" class="w-full" />
+                    <img  src={bannar4} alt='' />
+                </div>
+                <div id="item5" class="carousel-item w-full">
+                    <img  src={bannar5} alt='' />
                 </div>
             </div>
             <div class="flex justify-center w-full py-2 gap-2">
@@ -23,6 +30,7 @@ const Banner = () => {
                 <a href="#item2" class="btn btn-xs">2</a>
                 <a href="#item3" class="btn btn-xs">3</a>
                 <a href="#item4" class="btn btn-xs">4</a>
+                <a href="#item5" class="btn btn-xs">5</a>
             </div>
         </div>
     );
