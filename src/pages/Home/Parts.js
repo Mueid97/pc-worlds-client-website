@@ -10,7 +10,7 @@ const Parts = () => {
     }, [])
     return (
         <div>
-            <h1 className='text-center text-bold text-4xl mt-10 uppercase'>All Parts</h1>
+            <h1 className='text-center font-extrabold text-4xl font-serif text-accent mt-10 uppercase'>All Parts</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 px-14 mt-10'>
                 {
                     products.map(product => <Part key={product.id} product={product}></Part>)
