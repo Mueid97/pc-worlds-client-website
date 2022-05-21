@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Part = ({product}) => {
-    const {id, image, name, price, description, minimumQuantity, availableQuantity} = product;
+    const { image, name, price, description, minimumQuantity, availableQuantity} = product;
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-xl">
