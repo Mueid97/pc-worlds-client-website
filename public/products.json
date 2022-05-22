@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        
       "price": "$1,826.25",
       "image": "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870",
       "name": "rdx cooler",
@@ -9,7 +9,7 @@
       "availableQuantity": "500 items"
     },
     {
-        "id": 2,
+        
       "price": "$1,891.21",
       "image": "https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871",
       "name": "neno chip",
@@ -18,7 +18,7 @@
       "availableQuantity": "500 items"
     },
     {
-        "id": 3,
+        
       "price": "$1,187.10",
       "image": "https://images.unsplash.com/photo-1587134160474-cd3c9a60a34a?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870",
       "name": "asus coolre",
@@ -27,7 +27,7 @@
       "availableQuantity": "500 items"
     },
     {
-        "id": 4,
+        
       "price": "$1,927.34",
       "image": "https://images.unsplash.com/photo-1540829917886-91ab031b1764?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870",
       "name": "intel ci9",
@@ -36,7 +36,7 @@
       "availableQuantity": "500 items"
     },
     {
-        "id": 6,
+        
       "price": "$2,038.30",
       "image": "https://images.unsplash.com/photo-1621713827010-ed4f67435aca?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928",
       "name": "chips",
@@ -45,7 +45,7 @@
       "availableQuantity": "500 items"
     },
     {
-        "id": 7,
+        
       "price": "$3,803.02",
       "image": "https://images.unsplash.com/photo-1542978709-19c95dc3bc7e?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774",
       "name": "ddr5 ram",
