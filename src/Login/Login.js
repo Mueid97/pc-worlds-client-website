@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
+import Loading from '../pages/Share/Loading';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -29,7 +30,7 @@ const Login = () => {
     },[user, gUser, from, navigate])
 
     if (loading || gLoading) {
-        return 'loading'
+        return <Loading></Loading>
     }
 
     if (error || gError) {
@@ -46,15 +47,15 @@ const Login = () => {
         <div className='flex justify-center items-center h-screen'>
         <div className="card w-96 bg-base-100 shadow-xl">
             <div className="card-body">
-                <h2 className=" text-center text-2xl text-secondary font-bold">Login</h2>
+                <h2 className=" text-center text-2xl text-primary font-bold ">Login</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
 
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span className="label-text text-black">Email</span>
 
                         </label>
-                        <input type="email" placeholder="Your Email" className="input input-bordered w-full max-w-xs"
+                        <input type="email" placeholder="Your Email" className="input input-bordered w-full max-w-xs text-black"
                             {...register("email", {
                                 required: {
                                     value: true,
@@ -75,10 +76,10 @@ const Login = () => {
 
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
-                            <span className="label-text">Password</span>
+                            <span className="label-text text-black">Password</span>
 
                         </label>
-                        <input type="password" placeholder="Password" className="input input-bordered w-full max-w-xs"
+                        <input type="password" placeholder="Password" className="input input-bordered w-full max-w-xs text-black"
                             {...register("password", {
                                 required: {
                                     value: true,
@@ -95,11 +96,11 @@ const Login = () => {
                         </label>
                     </div>
                     {signInError}
-                    <input className='btn  w-full max-w-xs' type="submit" value='Login' />
+                    <input className='btn  w-full max-w-xs bg-gradient-to-r from-primary to-secondary' type="submit" value='Login' />
                 </form>
-                <p>New to Doctors portal <Link to='/register' className='text-secondary' >Create a New Account</Link></p>
-                <div className="divider">OR</div>
-                <button onClick={() => signInWithGoogle()} className="btn btn-outline">Continue With Google</button>
+                <p className='text-black'>New to PC WORLDS <Link to='/signup' className='text-primary' >Create a New Account</Link></p>
+                <div className="divider text-black">OR</div>
+                <button onClick={() => signInWithGoogle()} className="btn btn-outline bg-gradient-to-r from-primary to-secondary">Continue With Google</button>
             </div>
         </div>
     </div>

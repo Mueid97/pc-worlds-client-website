@@ -4,7 +4,7 @@ import Footer from '../Share/Footer';
 const Blogs = () => {
     return (
         <div>
-            <div className='px-14 my-5'>
+            <div className='px-14 my-5 text-black font-serif'>
                 <div className='mb-5'>
                     <h1 className='text-3xl text-bold'> How will you improve the performance of a React Application?</h1>
                     <p>Keeping component state local where necessary.
