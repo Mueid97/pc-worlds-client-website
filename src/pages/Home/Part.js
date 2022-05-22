@@ -8,14 +8,14 @@ const Part = ({product}) => {
                 <figure className="px-10 pt-10">
                     <img src={image} alt="Shoes" className="rounded-xl h-52" />
                 </figure>
-                <div className="card-body items-center text-center">
+                <div className="card-body items-center text-black text-center">
                     <h2 className="card-title">{name}</h2>
                     <p>Price: {price}</p>
                     <p>Min-Quantity: {minimumQuantity}</p>
                     <p>Available-Quantity: {availableQuantity}</p>
                     <p>{description}</p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn btn-primary bg-gradient-to-r from-primary to-secondary">Buy Now</button>
                     </div>
                 </div>
             </div>

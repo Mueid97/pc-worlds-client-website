@@ -4,14 +4,17 @@ import Banner from './Banner';
 import BusinessSummery from './BusinessSummery';
 import NewArrival from './NewArrival';
 import Parts from './Parts';
+import Vision from './Vision';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
             <Parts></Parts>
-            <BusinessSummery></BusinessSummery>
             <NewArrival></NewArrival>
+            <Vision></Vision>
+            <BusinessSummery></BusinessSummery>
+            
             <Footer></Footer>
         </div>
     );
