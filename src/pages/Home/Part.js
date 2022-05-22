@@ -2,10 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Part = ({product}) => {
-    const { image, name, price, description, minimumQuantity, availableQuantity} = product;
+    const {_id, image, name, price, description, minimumQuantity, availableQuantity} = product;
     const navigate = useNavigate();
-    const handleBye = ()=>{
-        navigate('/purchase')
+
+    const handleBye = (id)=>{
+        navigate(`/purchase/${id}`);
     }
     return (
         <div>
@@ -20,7 +21,7 @@ const Part = ({product}) => {
                     <p>Available-Quantity: {availableQuantity}</p>
                     <p>{description}</p>
                     <div className="card-actions">
-                        <button onClick={handleBye} className="btn btn-primary bg-gradient-to-r from-primary to-secondary">Buy Now</button>
+                        <button onClick={()=>handleBye(_id)} className="btn btn-primary bg-gradient-to-r from-primary to-secondary">Buy Now</button>
                     </div>
                 </div>
             </div>

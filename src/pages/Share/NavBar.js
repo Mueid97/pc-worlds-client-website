@@ -8,13 +8,16 @@ const NavBar = () => {
     const [user] = useAuthState(auth);
     const signUp = () => {
         signOut(auth);
-      };
+    };
     const manuBar = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='reviews'>Reviews</Link></li>
         <li><Link to='purchase'>Purchase</Link></li>
         <li><Link to='blogs'>Blogs</Link></li>
-        { user? <button onClick={signUp} className="btn bg-gradient-to-r from-primary to-secondary">Sign Out</button>:
+        <li><Link to='reviews'>Reviews</Link></li>
+        {
+            user && <li><Link to='deshboard' className='lg:block hidden'>DeshBoard</Link></li>
+        }
+        {user ? <button onClick={signUp} className="btn bg-gradient-to-r from-primary to-secondary">Sign Out</button> :
             <li><Link to='login'>Login</Link></li>}
     </>
     return (
@@ -40,7 +43,9 @@ const NavBar = () => {
                         }
                     </ul>
                 </div>
-                
+                <div className='py-4'>
+                    <label htmlFor="my-drawer-2" className="btn btn-ghost bg-gradient-to-r from-primary to-secondary drawer-button btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:hidden">Dashboard</label>
+                </div>
             </div>
         </div>
     );
