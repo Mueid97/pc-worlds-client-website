@@ -6,6 +6,8 @@ import Purchase from './pages/Purchase/Purchase';
 import NotFound from './pages/NotFound/NotFound';
 import Blogs from './pages/Blogs/Blogs';
 import NavBar from './pages/Share/NavBar';
+import RequireAuth from './RequireAuth/RequireAuth';
+import Login from './Login/Login';
 
 function App() {
   return (
@@ -14,8 +16,13 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='reviews' element={<Reviews></Reviews>} ></Route>
-        <Route path='purchase' element={<Purchase></Purchase>} ></Route>
+        <Route path='purchase' element={
+        <RequireAuth>
+          <Purchase></Purchase>
+          </RequireAuth>} >
+          </Route>
         <Route path='blogs' element={<Blogs></Blogs>} ></Route>
+        <Route path='login' element={<Login></Login>} ></Route>
         <Route path='*' element={<NotFound></NotFound>} ></Route>
       </Routes>
     </div>

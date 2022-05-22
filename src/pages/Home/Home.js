@@ -14,7 +14,6 @@ const Home = () => {
             <NewArrival></NewArrival>
             <Vision></Vision>
             <BusinessSummery></BusinessSummery>
-            
             <Footer></Footer>
         </div>
     );
