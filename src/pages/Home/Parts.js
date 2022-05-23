@@ -13,7 +13,7 @@ const Parts = () => {
             <h1 className='text-center font-extrabold text-4xl font-serif text-black mt-10 uppercase'>All Parts</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 px-14 mt-10'>
                 {
-                    products.map(product => <Part key={product._id} product={product}></Part>)
+                    products.map(product => <Part key={product._id} product={product} setProducts={setProducts}></Part>)
                 }
             </div>
         </div>

@@ -12,6 +12,7 @@ const NavBar = () => {
     const manuBar = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='purchase'>Purchase</Link></li>
+        
         <li><Link to='blogs'>Blogs</Link></li>
         <li><Link to='reviews'>Reviews</Link></li>
         {

@@ -12,7 +12,8 @@ import Deshboard from './pages/Deshboard/Deshboard';
 import MyOrder from './pages/Deshboard/MyOrder';
 import MyReview from './pages/Deshboard/MyReview';
 import MyProfile from './pages/Deshboard/MyProfile';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div >
@@ -43,6 +44,7 @@ function App() {
         <Route path='signup' element={<SignUp></SignUp>} ></Route>
         <Route path='*' element={<NotFound></NotFound>} ></Route>
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
