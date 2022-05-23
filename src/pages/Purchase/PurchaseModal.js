@@ -2,21 +2,22 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
+import Loading from '../Share/Loading';
 
 const PurchaseModal = ({product, setProducts}) => {
     const {_id, name, } = product;
-    const [user] = useAuthState(auth);
+    const [user,loading] = useAuthState(auth);
 
     const handlePurches = e =>{
         e.preventDefault();
         const email = e.target.email.value;
-        const clientName = e.target.name.value;
-        console.log(clientName,email)
+        const client = e.target.name.value;
+        console.log(client,email)
 
         const parchase = {
             productId : _id,
             productName: name,
-            clientName: user.displayName,
+            client: user.displayName,
             email: email,
             phone: e.target.phone.value,
         }
@@ -38,6 +39,10 @@ const PurchaseModal = ({product, setProducts}) => {
             }
             setProducts(null);
         })
+    }
+
+    if (loading) {
+        return <Loading></Loading>
     }
     return (
         <div>

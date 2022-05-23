@@ -28,8 +28,8 @@ const CountBtn = () => {
                         <button className="btn btn-outline-primary" type="button" onClick={decNum}>-</button>
                     </div>
                     <input type="text" className="form-control text-center" value={num} onChange={handleChange} />
-                    <div className="input-group-prepend">
-                        <button className="btn btn-outline-primary" type="button" onClick={incNum}>+</button>
+                    <div className="input-group-prepend ">
+                        <button className="btn btn-outline-primary " type="button" onClick={incNum}>+</button>
                     </div>
                 </div>
             </div>
