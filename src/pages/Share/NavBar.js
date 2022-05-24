@@ -14,7 +14,7 @@ const NavBar = () => {
         <li><Link to='purchase'>Purchase</Link></li>
         
         <li><Link to='blogs'>Blogs</Link></li>
-        <li><Link to='reviews'>Reviews</Link></li>
+        
         {
             user && <li><Link to='deshboard' className='lg:block hidden'>DeshBoard</Link></li>
         }
