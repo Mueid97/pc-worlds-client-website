@@ -41,6 +41,7 @@ function App() {
           <Route path='profile' element={<MyProfile></MyProfile>}></Route>
           </Route>
         <Route path='blogs' element={<Blogs></Blogs>} ></Route>
+        
         <Route path='login' element={<Login></Login>} ></Route>
         <Route path='signup' element={<SignUp></SignUp>} ></Route>
         <Route path='*' element={<NotFound></NotFound>} ></Route>
