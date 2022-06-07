@@ -9,7 +9,8 @@ const MyReview = () => {
         <div>
             <div className="hero min-h-screen ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <form onSubmit={handleComment}>
+                    <form onSubmit={handleComment
+                    }>
                         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                             <div className="card-body">
                                 <div className="form-control">
